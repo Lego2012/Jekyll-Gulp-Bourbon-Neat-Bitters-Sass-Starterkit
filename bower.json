@@ -1,0 +1,20 @@
+{
+  "name": "Leos Jekyll Gulp Starter Kit",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Lego2012/jekyll-gulp-starter-kit-leo.git",
+  "authors": [
+    "Leo Merkel <leo@leomerkel.de>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_assets/_vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

@@ -1,0 +1,43 @@
+# Variables
+sitename: "Jekyll & Gulp Template"
+author: "Leo Merkel"
+keywords: "keyword1,keyword2,keyword3"
+description: "Webseiten mit Jekyll entwickeln ist wirklich einfach, aber mit Gulp wird's unglaublich."
+title-divider: " -- "
+
+# Site settings
+baseurl: "http://localhost:3000"
+url: ""
+
+source: ./_src
+destination: ./site
+
+# Navigation is located in _data/nav.yml: Call with site.data.nav
+# The navigation can also be steered with a plugin,
+# see _assets/_vendor/site-menus/README.md
+
+# Members are located in _data/members.yml: Call with site.data.members
+
+permalink: '/blog/:title'
+paginate: 5
+paginate_path: 'blog/page:num'
+
+timezone: Europe/Berlin
+
+# Gulp takes care of images and assets
+exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'page-template.html']
+
+# Don't import the folder structure
+exclude: []
+
+include: ['.htaccess', 'robots.txt', 'humans.txt']
+
+# `_config.build.yml` sets `future` and `show_drafts` to `false`
+future: true
+show_drafts: true
+
+# Markdown library
+markdown: kramdown
+
+gems:
+  - jekyll-sitemap
