@@ -19,8 +19,6 @@ destination: ./site
 # Members are located in _data/members.yml: Call with site.data.members
 
 permalink: '/blog/:title'
-paginate: 5
-paginate_path: 'blog/page:num'
 
 timezone: Europe/Berlin
 
