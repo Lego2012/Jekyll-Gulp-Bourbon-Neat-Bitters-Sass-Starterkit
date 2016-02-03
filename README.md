@@ -1,42 +1,41 @@
-Leos Jekyll Gulp Starter Kit
-=============================
+#Leo's Jekyll, Gulp, Bourbon, Neat, Bitters, Sass Starter Kit
 
-Dieses Projekt basiert auf 2 verschiedenen Arbeitsweisen: Gulp mit Sass `Branch: version-sass` und Gulp mit PostCSS `Branch: version-postcss`.
+##Aktueller Branch ist `develop`.
 
-Hier haben wir das Starterprojekt `Branch: version-sass` mit vollem Setup für Jekyll, Gulp, Sass, Browser-Sync, Bildoptimierung, HTML-Minifizierung und vieles mehr.
+Hier haben wir das Starterprojekt mit Setup für Jekyll, Gulp, Bourbon, Neat, Bitters, Sass, Browser-Sync, Bildoptimierung, HTML-Minifizierung und vieles mehr.
 
 ## Systemcheck
 
 Um dieses Starterprojekt einsetzen zu können, müssen die folgenden Programme auf dem Computer installiert sein:
 
-1. [Jekyll](http://jekyllrb.com/): `gem install jekyll`
-2. [NodeJS](http://nodejs.org): Das Installationsprogramm der Webseite benutzen
-3. npm install (Mac-Benutzer müssen evtl. `sudo` voranstellen)
+1. [NodeJS](http://nodejs.org): Das Installationsprogramm der Webseite benutzen
 
-## Lokal Installation
+## Lokale Installation
 
 Klone dieses Repository oder lade es in einen Ordner auf Deiner Festplatte herunter.
 
-Starte `./install-dev.sh` im Terminal.
+Starte `./install-dev.sh` im Terminal. Das Terminal gibt Dir Feedback über die durchgeführten Installationen.
 
 ## Benutzung
 
-Beobachtung der Dateiänderungen, Browser-Sync, Jade-Kompilierung, Post CSS etc:
+Beim ersten Start nach `install-dev` musst Du
 ```shell
-$ gulp serve
+$ gulp build
 ```
+im Terminal starten. Damit wird die Jekyll-Webseite automatisch komplett aufgebaut. Sie befindet sich danach im ebenfalls automatisch erzeugten Ordner `site`, die dann später auch auf den Server hochgeladen werden kann.
 
-Standardaufgabe kompiliert das komplette Projekt und bereitet es für den Upload vor:
+###Beobachtung der Dateiänderungen, Browser-Sync, Sass-Kompilierung etc:
+Der Server wird gestartet und die Webseite wird bei jeder Änderung im Browser neu geladen. Damit sind die Ergebnisse der Entwicklungsschritte sofort sichtbar.
 ```shell
 $ gulp
 ```
 
-Alle Dateien von `_src/_jadefiles` werdn in `_src/_includes` kompiliert:
-```shell
-$ gulp jade
-```
+**Hilfreiche Tasks**
 
-**Hilfreiche Befehle**
+Die Einstellungen für Bitters automatisch anpassen:
+```shell
+$ gulp copyBitters
+```
 
 Löschen der Bilder in `site/img` und `_assets/_img` Ordnern:
 ```shell
