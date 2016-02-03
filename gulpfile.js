@@ -59,7 +59,7 @@ gulp.task('sass', function () {
     // Don't write Sourcemaps of Sourcemaps
     var filter = gulpFilter(['*.css', '!*.map'], {restore: true});
     return sass('_assets/_scss/main.sass', {style: 'compressed', sourcemap: true })
-        .pipe(postcss([ prefix() ]))
+        .pipe(postcss([ prefix({ browsers: ['> 5%'] }) ]))
         .pipe(filter) // Don't write Sourcemaps of Sourcemaps
         .pipe(sourcemaps.write())
         .pipe(filter.restore) // Recreate original files
@@ -134,7 +134,7 @@ gulp.task('build', function(callback) {
 // Default Task
 // =====================================
 // Default task. With `gulp` the assets are compiled and the Jekyll site is prepared for upload
-gulp.task('default', ['build']);
+gulp.task('default', ['serve']);
 
 // With `gulp serve` Sass and the Jekyll site get compiled
 // BrowserSync gets started & the files are being watched
