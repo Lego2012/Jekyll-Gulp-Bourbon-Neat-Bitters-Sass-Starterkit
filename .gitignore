@@ -4,3 +4,4 @@ _assets/_vendor
 build
 .sass-cache
 site
+docs
