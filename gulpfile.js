@@ -141,3 +141,7 @@ gulp.task('default', ['serve']);
 gulp.task('serve', function(callback) {
     runSequence('jekyll-build', ['js', 'js:vendor', 'sass', 'img', 'browser-sync'], 'watch');
 });
+
+// =====================================
+// Helper Tasks
+// =====================================
