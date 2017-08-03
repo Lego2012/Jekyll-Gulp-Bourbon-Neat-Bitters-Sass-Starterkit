@@ -1,6 +1,8 @@
-#Leos Jekyll, Gulp, Bourbon, Neat, Bitters, Sass Starter Kit
+# Dieses Respository wird nicht weiter gepflegt, kann aber natürlich weiter genutzt werden
 
-##Aktueller Branch ist `develop`.
+# Leos Jekyll, Gulp, Bourbon, Neat, Bitters, Sass Starter Kit
+
+## ktueller Branch ist `develop`.
 
 Hier haben wir das Starterprojekt mit vollem Setup für Jekyll, Gulp, Bourbon, Neat, Bitters, Sass, Browser-Sync, Bildoptimierung, HTML-Minifizierung und vieles mehr.
 
